@@ -1,17 +1,4 @@
-# Class Duty Dispatcher
-
-```bash
-# Project setup
-yarn install
-
-# Compiles and hot-reloads for development
-yarn run serve
-
-# Compiles and minifies for production
-yarn run build
-```
-
-## TODO
+# TODO
 
 - [x] 随机抽取，根据扫地次数（上午/中午/晚上，一天 3 扫），均匀安排
 
@@ -27,7 +14,11 @@ yarn run build
 
 如果 教室:公区 不是 1:1，教室 工区，轮换着扫 会出现问题
 
-```php
+6个人扫教室 下一次应该扫公区 但需要12个人
+
+扫教室的只有6个人，不可能让原来扫公区的6个人 去再扫工区
+
+```$xslt
 // 上次扫工区，这次就不再扫工区
 $canArea = getMemberNextArea($name);
 if (!is_null($canArea) && $canArea !== $areaName) {
@@ -37,3 +28,4 @@ if (!is_null($canArea) && $canArea !== $areaName) {
 ```
 
 ![20180916232611](https://user-images.githubusercontent.com/22412567/45598053-028b7a00-ba08-11e8-87f1-4bfa3437de4b.jpg)
+

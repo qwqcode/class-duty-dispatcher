@@ -1,0 +1,14 @@
+{
+    "name": "qwqcode/class-duty-dispatcher",
+    "authors": [
+        {
+            "name": "qwqcode",
+            "email": "1149527164@qq.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1.3",
+        "philwc/jsondb": "^0.2.0",
+        "envms/fluentpdo": "^1.1"
+    }
+}
